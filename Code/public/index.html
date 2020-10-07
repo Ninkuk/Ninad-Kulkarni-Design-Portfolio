@@ -74,78 +74,11 @@
     </div>
 
     <div id="skillz" class="mt-5 mb-5 container">
-        <h1 class="display-2 h1-bold text-white section-title">My Projects</h1>
+        <h1 class="display-2 h1-bold text-white text-center section-title">My Projects</h1>
 
-        <div id="filter-btns" class="row justify-content-start">
-            <!-- <button id="show-all-btn" type="button" class="btn btn-raised col-2 m-1">
-                <i class="fas fa-check"></i>
-                &nbsp;Show All
-            </button>
-            <button id="java-btn" type="button" class="btn btn-outline col-2 m-1">
-                <i class="fab fa-java"></i>
-                &nbsp;Java
-            </button>
-            <button id="firebase-btn" type="button" class="btn btn-outline col-2 m-1">
-                <i class="fas fa-server"></i>
-                &nbsp;Firebase
-            </button>
-            <button id="android-btn" type="button" class="btn btn-outline col-2 m-1">
-                <i class="fab fa-android"></i>
-                &nbsp;Android
-            </button>
-            <button id="python-btn" type="button" class="btn btn-outline col-2 m-1">
-                <i class="fab fa-python"></i>
-                &nbsp;Python
-            </button>
-            <button id="html-btn" type="button" class="btn btn-outline col-2 m-1">
-                <i class="fab fa-html5"></i>
-                &nbsp;HTML5
-            </button>
-            <button id="css-btn" type="button" class="btn btn-outline col-2 m-1">
-                <i class="fab fa-css3-alt"></i>
-                &nbsp;CSS3
-            </button>
-            <button id="kotlin-btn" type="button" class="btn btn-outline col-2 m-1">
-                <img id="kotlin-btn-icon" src="https://img.icons8.com/ios/15/000000/kotlin.png" />
-                &nbsp;Kotlin
-            </button> -->
-        </div>
+        <div id="filter-btns" class="row justify-content-center"></div>
 
-        <div id="projects-container" class="row justify-content-center mt-5">
-            <div class="card col-lg-5 col-md-5" onclick="location.href='skills.html';">
-                <img class="card-img-top" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"
-                    src="images/WebApp/P2F.jpg" alt="Card Image">
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="row m-0">
-                        <span class="badge badge-pill badge-primary mx-1"><i class="fab fa-python"></i></span>
-                        <span class="badge badge-pill badge-primary mx-1"><i class="fab fa-python"></i></span>
-                        <span class="badge badge-pill badge-primary mx-1"><i class="fab fa-python"></i></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card col-lg-5 col-md-5" onclick="location.href='skills.html';">
-                <img class="card-img-top" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"
-                    src="images/WebApp/PK.jpg" alt="Card Image">
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="row m-0">
-                        <span class="badge badge-pill badge-primary mx-1"><i class="fab fa-python"></i></span>
-                        <span class="badge badge-pill badge-primary mx-1"><i class="fab fa-python"></i></span>
-                        <span class="badge badge-pill badge-primary mx-1"><i class="fab fa-python"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="projects-container" class="row justify-content-center mt-5"></div>
 
     </div>
 
@@ -188,10 +121,11 @@
     </script>
 
     <script src="js/filter.js"></script>
-    
+    <script src="js/data.js"></script>
     <script>
         generateButtons();
-        buttons[0]["obj"].setAttribute('class', 'btn btn-raised col-2 m-1');
+        showCards('all');
+        buttons[0]["obj"].setAttribute('class', 'btn btn-raised col-5 col-md-2 m-1');
         buttons[0]["obj"].style.backgroundColor = buttons[0]['color'];
         buttons[0]["obj"].style.color = "#FFFFFF";
     </script>
