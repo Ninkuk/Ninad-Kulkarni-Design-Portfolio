@@ -74,10 +74,10 @@
     </div>
 
     <div id="skillz" class="mt-5 mb-5 container">
-        <h1 class="display-2 h1-bold text-white section-title">Skills Breakdown</h1>
+        <h1 class="display-2 h1-bold text-white section-title">My Projects</h1>
 
-        <div class="row justify-content-start">
-            <button id="show-all-btn" type="button" class="btn btn-raised btn-primary col-2 m-1">
+        <div id="filter-btns" class="row justify-content-start">
+            <!-- <button id="show-all-btn" type="button" class="btn btn-raised col-2 m-1">
                 <i class="fas fa-check"></i>
                 &nbsp;Show All
             </button>
@@ -108,7 +108,7 @@
             <button id="kotlin-btn" type="button" class="btn btn-outline col-2 m-1">
                 <img id="kotlin-btn-icon" src="https://img.icons8.com/ios/15/000000/kotlin.png" />
                 &nbsp;Kotlin
-            </button>
+            </button> -->
         </div>
 
         <div id="projects-container" class="row justify-content-center mt-5">
@@ -190,7 +190,7 @@
     <script src="js/filter.js"></script>
     
     <script>
-        resetButtons();
+        generateButtons();
         buttons[0]["obj"].setAttribute('class', 'btn btn-raised col-2 m-1');
         buttons[0]["obj"].style.backgroundColor = buttons[0]['color'];
         buttons[0]["obj"].style.color = "#FFFFFF";
