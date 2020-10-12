@@ -27,16 +27,16 @@ function generateButtons() {
             btn["obj"].setAttribute('class', 'btn btn-raised col-5 col-md-2 m-1');
             btn["obj"].style.backgroundColor = btn['color'];
             btn["obj"].style.color = "#FFFFFF";
-    
+
             if (btn["tag"] == "kotlin") {
                 btn['obj'].firstChild.src = 'https://img.icons8.com/ios/15/FFFFFF/kotlin.png';
             }
-    
+
             showCards(btn["tag"]);
         });
 
     });
-    
+
     resetButtons();
 }
 
@@ -60,7 +60,7 @@ function showCards(tag) {
             const cardDiv = document.createElement('div');
             cardDiv.classList.add('card', 'col-lg-5', 'col-md-5');
             cardDiv.onclick = () => {
-                location.href = project['url'];
+                window.open(project['url'], "_blank");
             }
 
             const cardImg = document.createElement('img');
@@ -74,14 +74,17 @@ function showCards(tag) {
 
             const cardText = document.createElement('p');
             cardText.classList.add('card-text');
+            cardText.style.fontSize = '111%';
             cardText.innerText = project['body'];
 
             const cardTags = document.createElement('div');
             cardTags.classList.add('row', 'm-0');
 
             project['tags'].map(tag => {
-                const pill = document.createElement('span');
-                pill.classList.add('badge', 'badge-pill', 'mx-1');
+                const pill = document.createElement('button');
+                // pill.disabled = true;
+                pill.classList.add('btn', 'bmd-btn-fab', 'bmd-btn-fab-sm', 'mx-1');
+                pill.style.boxShadow = 'none';
 
                 const icon = document.createElement('i');
                 for (let index = 0; index < buttons.length; index++) {
@@ -96,7 +99,8 @@ function showCards(tag) {
 
                 if (tag == 'kotlin') {
                     const kotlinIcon = document.createElement('img');
-                    kotlinIcon.src = 'https://img.icons8.com/ios/15/FFFFFF/kotlin.png'
+                    kotlinIcon.src = 'https://img.icons8.com/ios/100/FFFFFF/kotlin.png';
+                    kotlinIcon.style.padding = '10px';
                     pill.appendChild(kotlinIcon);
                 } else {
                     pill.appendChild(icon);
