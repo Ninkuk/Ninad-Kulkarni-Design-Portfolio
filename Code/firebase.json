@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "ninad-kulkarni-coding",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
