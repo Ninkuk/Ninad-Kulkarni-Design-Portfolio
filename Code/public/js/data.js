@@ -116,3 +116,16 @@ const projects = [{
         "url": ""
     },
 ];
+
+const workExp = [{
+        "title": "",
+        "logo": "",
+        "Duration": ""
+    },
+    {
+
+    },
+    {
+
+    },
+]; 
