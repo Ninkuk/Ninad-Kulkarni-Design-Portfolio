@@ -118,9 +118,11 @@ const projects = [{
 ];
 
 const workExp = [{
-        "title": "",
+        "title": "Graphic Designer",
+        "company": "ASU Enterprise Marketing HUB",
+        "description": "bruh",
         "logo": "",
-        "Duration": ""
+        "duration": "2020 - present"
     },
     {
 
