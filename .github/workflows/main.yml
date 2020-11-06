@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "code/**"
+      - "Code/**"
 
 jobs:
   build_and_preview:
