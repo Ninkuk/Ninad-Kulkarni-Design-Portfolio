@@ -21,4 +21,4 @@ jobs:
           expires: 30d
           projectId: ninad-kulkarni-portfolio
           channelId: live
-          entryPoint: "Code/firebase.json"
+          entryPoint: "Code/"
