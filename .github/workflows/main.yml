@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "Code/*"
+      - "Code/**"
 
 jobs:
   build_and_preview:
@@ -21,3 +21,4 @@ jobs:
           expires: 30d
           projectId: ninad-kulkarni-portfolio
           channelId: live
+          entryPoint: "./Code/firebase.json"
