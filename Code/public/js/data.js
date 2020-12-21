@@ -5,18 +5,6 @@ const buttons = [{
         "icon": "fas fa-check"
     },
     {
-        "tag": "java",
-        "obj": "",
-        "color": "#B55400",
-        "icon": "fab fa-java",
-    },
-    {
-        "tag": "firebase",
-        "obj": "",
-        "color": "#FFA611",
-        "icon": "fas fa-server"
-    },
-    {
         "tag": "android",
         "obj": "",
         "color": "#3DDC84",
@@ -47,6 +35,18 @@ const buttons = [{
         "icon": "fab fa-react"
     },
     {
+        "tag": "java",
+        "obj": "",
+        "color": "#B55400",
+        "icon": "fab fa-java",
+    },
+    {
+        "tag": "firebase",
+        "obj": "",
+        "color": "#FFA611",
+        "icon": "fas fa-server"
+    },
+    {
         "tag": "kotlin",
         "obj": "",
         "color": "#A05FFC",
@@ -56,6 +56,12 @@ const buttons = [{
 
 
 const projects = [{
+        "img": "images/WebApp/ANTM.jpg",
+        "body": "Built for a National Level competition (see below), this is the website of an imaginary home food delivery service called Paoletti's Kitchen.\n\nThis app was made in 2019 for the Future Business Leaders of America's (FBLA) Mobile Application Development Competition. The website won third place at the National Leadership Conference hosted in San Antonio, TX. It also won first place in Arizona State Leadership Conference and Region #3 Leadership Conference.\n\nRead more about it in achievements page.",
+        "tags": ['android', 'java', 'kotlin', 'firebase'],
+        "url": "https://github.com/Ninkuk/Atmanirbhar-Tarun-Manch_Self-Reliance"
+    },
+    {
         "img": "images/WebApp/P2F.jpg",
         "body": "Built for a National Level competition (see below), this is the website of an imaginary home food delivery service called Paoletti's Kitchen.\n\nThis app was made in 2019 for the Future Business Leaders of America's (FBLA) Mobile Application Development Competition. The website won third place at the National Leadership Conference hosted in San Antonio, TX. It also won first place in Arizona State Leadership Conference and Region #3 Leadership Conference.\n\nRead more about it in achievements page.",
         "tags": ['android', 'java', 'kotlin', 'firebase'],
@@ -124,16 +130,38 @@ const projects = [{
 ];
 
 const workExp = [{
+        "title": "Web Developer (Core Team)",
+        "company": "Developer Student Club at Arizona State University",
+        "description": "bruh",
+        "logo": "",
+        "duration": "Dec 2020 - present"
+    },
+    {
         "title": "Graphic Designer",
         "company": "ASU Enterprise Marketing HUB",
         "description": "bruh",
         "logo": "",
-        "duration": "2020 - present"
+        "duration": "Jan 2020 - present"
     },
     {
-
+        "title": "National Social Media Ambassador - Graphic Designer",
+        "company": "Future Business Leaders of America - Phi Beta Lambda (FBLA-PBL)",
+        "description": "bruh",
+        "logo": "",
+        "duration": "Oct 2018 - Jul 2019"
     },
     {
-
+        "title": "President - Pinnacle High School FBLA Chapter",
+        "company": "Future Business Leaders of America - Phi Beta Lambda (FBLA-PBL)",
+        "description": "bruh",
+        "logo": "",
+        "duration": "Aug 2018 - Jul 2019"
     },
-]; 
+    {
+        "title": "Editor and Webmaster - Pinnacle High School Key Club Chapter",
+        "company": "Key Club International",
+        "description": "bruh",
+        "logo": "",
+        "duration": "Aug 2017 - May 2019"
+    }
+];
