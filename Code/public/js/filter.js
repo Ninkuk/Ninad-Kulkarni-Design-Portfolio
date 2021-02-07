@@ -73,12 +73,14 @@ function showCards(tag) {
             cardBody.classList.add('card-body');
 
             const cardText = document.createElement('p');
-            cardText.classList.add('card-text');
+            cardText.classList.add('card-text', 'mb-5');
             cardText.style.fontSize = '111%';
             cardText.innerText = project['body'];
 
             const cardTags = document.createElement('div');
-            cardTags.classList.add('row', 'm-0');
+            cardTags.classList.add('row', 'mb-2');
+            cardTags.style.position = 'absolute';
+            cardTags.style.bottom = 0;
 
             project['tags'].map(tag => {
                 const pill = document.createElement('button');
